@@ -1,214 +1,208 @@
 body {
-    font-family: "SF Pro Text", BlinkMacSystemFont, -apple-system, sans-serif;
-    background: white;
+  font-family: "SF Pro Text", BlinkMacSystemFont, -apple-system, sans-serif;
+  background: white;
 }
 
 body.dark {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 img.cover {
-    height: 400px;
-    width: 100%;
-    object-fit: cover;
-    
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
 }
 
-h1, h2 {
-    text-align: center;
-    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
+h1,
+h2 {
+  text-align: center;
+  font-family: "Quattrocento", Georgia, "Times New Roman", Times, serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    font-size: 30pt;
-    margin-bottom: 10px;
+  font-size: 30pt;
+  margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 14pt;
-    font-style: italic;
-    font-family: sans-serif;
-    font-weight: 600;
-    color: #BBB;
+  font-size: 14pt;
+  font-style: italic;
+  font-family: sans-serif;
+  font-weight: 600;
+  color: #bbb;
 }
 
 .dark h2 {
-    color: #666;
+  color: #666;
 }
 
 .header {
-    padding-top: 3em;
-    padding-bottom: 3em;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 h3.written-in-ink {
-    font-size: 9pt;
-    font-family: sans-serif; 
-    text-align: center;
-    font-weight: 700;
-    position: fixed;
-    display: block;
-    width: 100%;
-    background: white;
-    margin: 0;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    top: 0;
+  font-size: 9pt;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 700;
+  position: fixed;
+  display: block;
+  width: 100%;
+  background: white;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  top: 0;
 }
 
 .dark h3.written-in-ink {
-    background: black;
+  background: black;
 }
-
 
 /* Seems necessary to make iframes work on itch.io on mobile iOS :-( */
 .outerContainer {
-    position: absolute;
-    display: block;
-    margin: 0;
-    padding: 0;
-    -webkit-overflow-scrolling: touch;
-    overflow: scroll;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    margin-bottom:4em;
+  position: absolute;
+  display: block;
+  margin: 0;
+  padding: 0;
+  -webkit-overflow-scrolling: touch;
+  overflow: scroll;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin-bottom: 4em;
 }
 
 .container {
-    display: block;
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 20px;
-    padding-top: 4em;
-    background: white;
-    padding-bottom: 1em;
+  display: block;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-top: 4em;
+  background: white;
+  padding-bottom: 1em;
 }
 
 .dark .container {
-    background: black;
+  background: black;
 }
 
 p {
-    font-size: 13pt;
-    color: white;
-    line-height: 1.7em;
-    font-weight: 300;
+  font-size: 13pt;
+  color: white;
+  line-height: 1.7em;
+  font-weight: 300;
 }
 
 a {
-    font-weight: 700;
-    color: #b97c2c;
-    font-family: sans-serif;
-    transition: color 0.6s;
-    text-decoration: none;
+  font-weight: 700;
+  color: #b97c2c;
+  font-family: sans-serif;
+  transition: color 0.6s;
+  text-decoration: none;
 }
 
 .dark a {
-    color: #1a88cc;
-    transition: color 0.6s;
+  color: #e8ba00ce;
+  transition: color 0.6s;
 }
 
-
 a:hover {
-    color: black;
-    transition: color 0.1s;
+  color: black;
+  transition: color 0.1s;
 }
 
 .dark a:hover {
-    color: white;
+  color: white;
 }
 
 strong {
-    color: black;
-    font-weight: bold;
+  color: black;
+  font-weight: bold;
 }
 
 .dark strong {
-    color: white;
+  color: white;
 }
 
 img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    -webkit-box-shadow: 3px 10px 73px -97px rgba(255,255,255,1);
--moz-box-shadow: 3px 10px 73px -97px rgba(255,255,255,1);
-box-shadow: 3px 10px 73px -97px rgba(255,255,255,1);
-
-
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  -webkit-box-shadow: 3px 10px 73px -97px rgba(255, 255, 255, 1);
+  -moz-box-shadow: 3px 10px 73px -97px rgba(255, 255, 255, 1);
+  box-shadow: 3px 10px 73px -97px rgba(255, 255, 255, 1);
 }
 
 .container .hide {
-    opacity: 0.0;
+  opacity: 0;
 }
 
 .container .invisible {
-    display: none;
+  display: none;
 }
 
 .container * {
-    opacity: 1.0;
-    transition: opacity 1.0s;
+  opacity: 1;
+  transition: opacity 1s;
 }
 
 p.choice {
-    text-align: center;
-    line-height: 1.7em;
+  text-align: center;
+  line-height: 1.7em;
 }
 
 /* first choice */
 :not(.choice) + .choice {
-    padding-top: 1em; 
+  padding-top: 1em;
 }
 
-
 p.choice a {
-    font-size: 15pt;
+  font-size: 15pt;
 }
 
 /* Built in class if you want to write:
      The End # CLASS: end
 */
 .end {
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .dark .end {
-    color: white;
+  color: white;
 }
-
 
 /* Custom Classes */
 
 .title {
   font-size: 3em;
   font-weight: 600;
-  padding:0;
+  padding: 0;
   margin: 0;
-  color: white
+  color: white;
 }
 
 .subtitle {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: 400;
-  color:grey;
+  color: grey;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
 
 .chapter {
- font-size: 2.5em;
+  font-size: 2.5em;
   font-weight: 400;
-  color:grey;
+  color: grey;
   margin-bottom: 0.5em;
   margin-top: 0;
 }
@@ -216,7 +210,7 @@ p.choice a {
 .time {
   font-size: 2em;
   font-weight: 300;
-  display: block
+  display: block;
 }
 
 .time:before {
@@ -226,57 +220,102 @@ p.choice a {
 }
 
 .date {
-    font-size: 3em;
-    font-weight: 300;
-    display: block;
-    margin: 0;
-  }
-  
-  .date:before {
-    content: "📆   ";
-    font-size: 0.5em;
-    vertical-align: middle;
-  }
+  font-size: 3em;
+  font-weight: 300;
+  display: block;
+  margin: 0;
+}
+
+.date:before {
+  content: "📆   ";
+  font-size: 0.5em;
+  vertical-align: middle;
+}
 
 .measure {
   text-align: center;
 }
 
 .play {
-    background-color: white;
-    transition: color 0.6s;
-    transition: background-color 0.6s;
-    color: black;
-    padding: 1em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    display: block
+  background-color: 1a88cc;
+  transition: color 0.6s;
+  transition: background-color 0.6s;
+  color: black;
+  padding: 1em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: block;
 }
 
 .play:hover {
-    background-color: #1a88cc;
-    color: white
-    
+  background-color: #a69800;
+  color: #a69800;
 }
 
-
 .america::after {
-    content: "🇺🇸";
+  content: "🇺🇸";
   font-size: 1em;
   vertical-align: middle;
 }
 
 .japan::after {
-    content: "🇯🇵";
+  content: "🇯🇵";
   font-size: 1em;
   vertical-align: middle;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 img {
-    top: 0;
-    pointer-events: none
-  }
+  top: 0;
+  pointer-events: none;
+}
+
+.highlight {
+  background-color: rgb(0, 0, 0); /* Or any color you prefer */
+  color: #e8ba00ce; /* Optional: Change text color */
+}
+
+.initial {
+  color: white;
+}
+
+.quote {
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  left: -10px;
+  top: px;
+}
+
+.quote::after {
+  content: "”";
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  right: -5px;
+  bottom: -5px;
+}
+
+.quoteName {
+  color: #ffffff;
+  margin-top: -10px;
+  padding-left: 30px;
+}
+
+.green {
+  color: #4caf50;
+}
+
+.questions {
+  color: #4caf50;
+  padding-left: 30px;
+}
