@@ -66,6 +66,7 @@
 
           setVisible(".header", false);
 
+          // restart
           if (tag == "RESTART") {
             restart();
             return;
