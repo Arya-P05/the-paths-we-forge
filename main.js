@@ -38,26 +38,19 @@
     var paragraphIndex = 0;
     var delay = 0.0;
 
-    // Don't over-scroll past new content
     var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
 
-    // Generate story text - loop through available content
-    var currentSectionParagraphs = []; // Array to keep track of paragraphs in the current section
+    var currentSectionParagraphs = [];
     while (story.canContinue) {
-      // Get ink to generate the next paragraph
       var paragraphText = story.Continue();
       var tags = story.currentTags;
 
-      // Any special tags included with this line
       var customClasses = [];
       for (var i = 0; i < tags.length; i++) {
         var tag = tags[i];
 
-        // Detect tags of the form "X: Y". Currently used for IMAGE and CLASS but could be
-        // customised to be used for other things too.
         var splitTag = splitPropertyTag(tag);
 
-        // IMAGE: src
         if (splitTag && splitTag.property == "IMAGE") {
           var imageElement = document.createElement("img");
           imageElement.src = splitTag.val;
@@ -65,20 +58,12 @@
 
           showAfter(delay, imageElement);
           delay += 200.0;
-        }
-
-        // CLASS: className
-        else if (splitTag && splitTag.property == "CLASS") {
+        } else if (splitTag && splitTag.property == "CLASS") {
           customClasses.push(splitTag.val);
-        }
-
-        // CLEAR - removes all existing content.
-        // RESTART - clears everything and restarts the story from the beginning
-        else if (tag == "CLEAR" || tag == "RESTART") {
+        } else if (tag == "CLEAR" || tag == "RESTART") {
           removeAll("p");
           removeAll("img");
 
-          // Comment out this line if you want to leave the header visible when clearing
           setVisible(".header", false);
 
           if (tag == "RESTART") {
@@ -88,12 +73,10 @@
         }
       }
 
-      // Create paragraph element (initially hidden)
       var paragraphElement = document.createElement("p");
       paragraphElement.innerHTML = paragraphText;
       storyContainer.appendChild(paragraphElement);
 
-      // Add any custom classes derived from ink tags
       for (var i = 0; i < customClasses.length; i++) {
         paragraphElement.classList.add(customClasses[i]);
       }
