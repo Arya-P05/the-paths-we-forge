@@ -39,7 +39,7 @@ You think about the times in your life where you’ve had to rely on your streng
 
 And so you ask yourself... “What’s one challenge from the past year that pushed me to my limits but I still overcame?”
 
-+ [Contiune...] -> continue1
++ [Continue...] -> continue1
 
 = Lantern
 You choose to follow the light of your lantern. 
@@ -56,7 +56,7 @@ You think about the moments when you trusted yourself this year and kept going d
 
 And so you ask yourself... "What’s one decision I made unsure of the results? Would I make that decision again?"
 
-+ [Contiune...] -> continue1
++ [Continue...] -> continue1
 
 = Horizon
 You decide to walk toward the horizon, where the land stretches endlessly.
@@ -67,7 +67,7 @@ You feel a sense of excitement as you step into the unknown, ready to take on wh
 
 And so you ask yourself... "What’s one goal you have for the upcoming year that is fueled by passion?"
 
-+ [Contiune...] -> continue1
++ [Continue...] -> continue1
 
 = continue1
 <img src="Chasm.jpg" class="cover"/>
