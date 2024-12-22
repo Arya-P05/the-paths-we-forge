@@ -281,3 +281,31 @@ img {
 .initial {
   color: white;
 }
+.quote {
+  padding-top: 40px;
+  color: #ffffff;
+}
+
+.quote::before {
+  content: "“";
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  left: -10px;
+  top: px;
+}
+
+.quote::after {
+  content: "”";
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  right: -5px;
+  bottom: -5px;
+}
+
+.quoteName {
+  color: #ffffff;
+  margin-top: -10px;
+  padding-left: 30px;
+}
