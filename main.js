@@ -104,39 +104,6 @@
       // Fade in paragraph after a short delay
       showAfter(delay, paragraphElement);
       delay += 200.0;
-
-      // Break when we hit a choice (we'll highlight the entire section at once)
-      if (story.currentChoices.length > 0) {
-        // Mark that the first decision is now made
-        firstDecisionMade = true;
-        break;
-      }
-    }
-
-    // Add highlight to the entire section after the first decision
-    if (firstDecisionMade && currentSectionParagraphs.length > 0) {
-      if (lastHighlightedSection) {
-        // Remove highlight from the last section
-        lastHighlightedSection.forEach(function (paragraph) {
-          paragraph.classList.remove("highlight");
-        });
-      }
-
-      // Highlight the current section
-      currentSectionParagraphs.forEach(function (paragraph) {
-        if (
-          !(
-            paragraph.classList.contains("title") ||
-            paragraph.classList.contains("subtitle") ||
-            paragraph.classList.contains("initial")
-          )
-        ) {
-          paragraph.classList.add("highlight");
-        }
-      });
-
-      // Update the last highlighted section
-      lastHighlightedSection = currentSectionParagraphs;
     }
 
     // Create HTML choices from ink choices
