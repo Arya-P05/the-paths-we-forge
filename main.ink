@@ -143,7 +143,7 @@ After what feels like an eternity, you cross the chasm. The tension in your ches
 
 The sand becomes firmer, and in the distance, you spot a small oasis. 
 
-<img src="image_fx_-7.jpg" class="cover"/>
+<img src="Oasis.jpg" class="cover"/>
 
 You step towards the oasis. Everything feels lighter now, your thoughts begin to shift—not to the path behind you, but to the road ahead.
 
