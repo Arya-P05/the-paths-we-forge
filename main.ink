@@ -83,3 +83,15 @@ As you stand before the chasm, you need to choose how to move forward...
 + [Attempt to jump accross] -> jump
 + [Search for a way around it] -> around
 + [Sit at the edge and wait] -> wait
+
+= jump
+You look over the edge. The other side feels impossibly far but you trust yourself. 
+
+You ready yourself, take a few steps back, you bend your knees, tighen your muscles, and run... 
+
+As you step closer to the edge, you feel your breath hitch. The void below seems to stretch wider, and you suddenly STOP right before taking off!
+
+You get a reminder of what’s at stake. Your mind races. The decision looms larger now, and you pause. Do you...
+
++ [Take the leap and jump across the chasm] -> jumpResult
++ [Step back and find another way] -> around
