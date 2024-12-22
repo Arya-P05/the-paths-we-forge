@@ -113,6 +113,16 @@
       }
     }
 
+    // Add highlight to the entire section after the first decision
+    if (firstDecisionMade && currentSectionParagraphs.length > 0) {
+      if (lastHighlightedSection) {
+        // Remove highlight from the last section
+        lastHighlightedSection.forEach(function (paragraph) {
+          paragraph.classList.remove("highlight");
+        });
+      }
+    }
+
     // Create HTML choices from ink choices
     story.currentChoices.forEach(function (choice) {
       // Create paragraph with anchor element
