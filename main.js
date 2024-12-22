@@ -121,6 +121,19 @@
           paragraph.classList.remove("highlight");
         });
       }
+
+      // Highlight the current section
+      currentSectionParagraphs.forEach(function (paragraph) {
+        if (
+          !(
+            paragraph.classList.contains("title") ||
+            paragraph.classList.contains("subtitle") ||
+            paragraph.classList.contains("initial")
+          )
+        ) {
+          paragraph.classList.add("highlight");
+        }
+      });
     }
 
     // Create HTML choices from ink choices
