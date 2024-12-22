@@ -309,3 +309,12 @@ img {
   margin-top: -10px;
   padding-left: 30px;
 }
+
+.green {
+  color: #4caf50;
+}
+
+.questions {
+  color: #4caf50;
+  padding-left: 30px;
+}
