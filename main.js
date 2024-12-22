@@ -104,6 +104,13 @@
       // Fade in paragraph after a short delay
       showAfter(delay, paragraphElement);
       delay += 200.0;
+
+      // Break when we hit a choice (we'll highlight the entire section at once)
+      if (story.currentChoices.length > 0) {
+        // Mark that the first decision is now made
+        firstDecisionMade = true;
+        break;
+      }
     }
 
     // Create HTML choices from ink choices
