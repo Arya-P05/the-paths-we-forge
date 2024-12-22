@@ -5,9 +5,9 @@
 <img src="Hero.jpg" class="cover"/>
 The Paths We Forge #CLASS: title
 
--> Housing.Start
+-> Activity.Start
 
-=== Housing ===
+=== Activity ===
 = Start 
 
 Our lives are made of countless choices, some small, some monumental. #CLASS: initial
