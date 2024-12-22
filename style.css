@@ -277,3 +277,7 @@ img {
   background-color: rgb(0, 0, 0); /* Or any color you prefer */
   color: #e8ba00ce; /* Optional: Change text color */
 }
+
+.initial {
+  color: white;
+}
