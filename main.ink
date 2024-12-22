@@ -2,7 +2,7 @@
 
 
 
-<img src="image_fx_-3.jpg" class="cover"/>
+<img src="Hero.jpg" class="cover"/>
 The Paths We Forge #CLASS: title
 
 -> Housing.Start
