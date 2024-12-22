@@ -70,7 +70,7 @@ And so you ask yourself... "What’s one goal you have for the upcoming year tha
 + [Contiune...] -> continue1
 
 = continue1
-<img src="image_fx_-5.jpg" class="cover"/>
+<img src="Chasm.jpg" class="cover"/>
 
 You continue to make stride through the slient landscape but your thoughts are loud, filled with your memories and aspirations. 
 
