@@ -38,6 +38,7 @@
     var paragraphIndex = 0;
     var delay = 0.0;
 
+    // Don't over-scroll past new content
     var previousBottomEdge = firstTime ? 0 : contentBottomEdgeY();
 
     var currentSectionParagraphs = [];
@@ -66,7 +67,6 @@
 
           setVisible(".header", false);
 
-          // restart
           if (tag == "RESTART") {
             restart();
             return;
