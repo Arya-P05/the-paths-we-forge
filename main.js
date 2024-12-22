@@ -134,6 +134,9 @@
           paragraph.classList.add("highlight");
         }
       });
+
+      // Update the last highlighted section
+      lastHighlightedSection = currentSectionParagraphs;
     }
 
     // Create HTML choices from ink choices
